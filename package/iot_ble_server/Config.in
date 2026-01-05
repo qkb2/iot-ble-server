@@ -1,9 +1,9 @@
 config BR2_PACKAGE_IOT_BLE_SERVER
-        bool "iot_ble_server"
-        help
-		IoT BLE HTTP Server
-        depends on BR2_TOOLCHAIN_HAS_THREADS
-        select BR2_PACKAGE_LIBPTHREAD 
+    bool "iot_ble_server"
+    help
+    IoT BLE HTTP Server
+    depends on BR2_TOOLCHAIN_HAS_THREADS
+    select BR2_PACKAGE_LIBPTHREAD 
 
 if BR2_PACKAGE_IOT_BLE_SERVER
 

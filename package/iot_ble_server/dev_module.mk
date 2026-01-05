@@ -10,3 +10,5 @@ IOT_BLE_SERVER_CONF_OPTS += \
 ifeq ($(BR2_PACKAGE_IOT_BLE_SERVER_VERBOSE),y)
 IOT_BLE_SERVER_CONF_OPTS += -DVERBOSE=ON
 endif
+
+$(eval $(cmake-package))
