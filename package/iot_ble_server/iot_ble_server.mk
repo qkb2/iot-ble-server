@@ -11,3 +11,9 @@ IOT_BLE_SERVER_CONF_OPTS += -DVERBOSE=ON
 endif
 
 $(eval $(cmake-package))
+
+define IOT_BLE_SERVER_INSTALL_INIT_SYSV
+	$(INSTALL) -D -m 0755 \
+		$(IOT_BLE_SERVER_PKGDIR)/S99iot_ble_server \
+		$(TARGET_DIR)/etc/init.d/S99iot_ble_server
+endef

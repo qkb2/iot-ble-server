@@ -1,0 +1,38 @@
+#!/bin/sh
+
+DAEMON=/usr/bin/iot_ble_server
+PIDFILE=/var/run/iot_ble_server.pid
+
+start() {
+    echo "Starting BLE HTTP server"
+    start-stop-daemon -S -q -m -p $PIDFILE -x $DAEMON -- &
+}
+
+stop() {
+    echo "Stopping BLE HTTP server"
+    start-stop-daemon -K -q -p $PIDFILE
+}
+
+restart() {
+    stop
+    sleep 10
+    start
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+        ;;
+esac
+
+exit 0

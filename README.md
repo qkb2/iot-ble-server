@@ -3,7 +3,7 @@
 ### Cloning repository
 
 ```sh
-git clone --recurse-submodules https://github.com/qkm2/iot-ble-server
+git clone --recurse-submodules https://github.com/qkb2/iot-ble-server
 cd iot-ble-server
 ```
 
