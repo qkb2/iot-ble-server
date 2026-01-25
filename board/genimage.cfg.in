@@ -5,7 +5,7 @@ image boot.vfat {
 		}
 	}
 
-	size = 10M
+	size = 8M
 }
 
 image sdcard.img {

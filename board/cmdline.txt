@@ -1,1 +1,1 @@
-root=/dev/mmcblk0p2 rootwait rootfstype=squashfs ro console=tty1 console=ttyAMA0,115200
+root=/dev/mmcblk0p2 rootwait rootfstype=squashfs ro earlycon=pl011,0xfe201000 console=tty1 console=ttyAMA0,115200
