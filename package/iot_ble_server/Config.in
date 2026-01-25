@@ -13,7 +13,7 @@ if BR2_PACKAGE_IOT_BLE_SERVER
 
 config BR2_PACKAGE_IOT_BLE_SERVER_MAC
     string "BLE device MAC address"
-    default "00:00:00:00:00:00"
+    default "58:8C:81:A7:EC:F4"
     help
       BLE device MAC address to connect to (LE public or random).
 
